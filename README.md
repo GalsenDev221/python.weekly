@@ -1,6 +1,6 @@
 # Python Weekly 🐍🎯
 
-Python Weekly is a collection of some little tips with Python every week by @daoodaba975
+Python Weekly is a collection of a few little programming tips with Python each week by @daoodaba975
 
 ![python-v-3.7](https://img.shields.io/badge/python-v3.7-blue)
 
