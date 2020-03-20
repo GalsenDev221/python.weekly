@@ -9,11 +9,11 @@ Python Weekly is a collection of some little tips with Python every week by @dao
 > **Note:**
 > This project is open source and is particularly aimed at beginners but also to the whole Python community all over the world.
 
-We are also on **[Twitter](https://github.com/daoodaba975)**, **[Telegram](https://github.com/daoodaba975)** & **[Facebook](https://github.com/daoodaba975)**
+We are also on **[Twitter](https://twitter.com/galsendev221)**, **[Telegram](https://t.me/galsendev221)** & **[Facebook](https://www.facebook.com/galsendev221)**
 
 ## License 💼🎫
 
-All the code published here is open source & under the **[MIT License](https://Galsen-Dev-LAB/python-weekly/blob/master/LICENCE)** ✔
+All the code published here is open source & under the **[MIT License](https://Galsen-Dev-LAB/python-weekly/blob/master/LICENCE.md)** ✔
 
 ## Contributor 🌍🌟
 
