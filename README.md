@@ -13,7 +13,7 @@ We are also on **[Twitter](https://twitter.com/galsendev221)**, **[Telegram](htt
 
 ## License 💼🎫
 
-All the code published here is open source & under the **[MIT License](https://Galsen-Dev-LAB/python-weekly/blob/master/LICENCE.md)** ✔
+All the code published here is open source & under the **[MIT License](https://github.com/Galsen-Dev-LAB/python-weekly/blob/master/LICENSE.md)** ✔
 
 ## Contributor 🌍🌟
 
