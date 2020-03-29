@@ -17,6 +17,3 @@ def searchFile(fileName):
                 exit()
 if __name__ == '__main__':
     searchFile('logo.png') #Nom du fichier à rechercher + extension
-
-# Ce script Python permet de trouver un fichier dans un répertoire
-# de votre machine et vous indique le chemin vers ce fichier 😉
