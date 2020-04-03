@@ -1,6 +1,6 @@
 # Week 3️⃣
 
-> This Python script .
+> This Python script
 
 ## Requirement
 
