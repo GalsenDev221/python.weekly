@@ -9,10 +9,5 @@ def black_and_white(input_image_path,
     bw.save(output_image_path)
 
 if __name__ == '__name__':
-    black_and_white('python-weekly.png',
-                    'b_python-weekly.png')
-
-
-# PROG
-# Ce script Python permet de transformer
-# une copie d'une image en couleur en une image en noir et blanc. 👇🏾
+    black_and_white('africaine.jpg',
+                    'africaine-bw.jpg')
