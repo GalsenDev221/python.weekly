@@ -1,3 +1,6 @@
+# author @daoodaba975
+# GalsenDev
+
 from PIL import Image
 
 def black_and_white(input_image_path,
