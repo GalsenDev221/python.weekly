@@ -1,10 +1,11 @@
 # Week 4️⃣
 
-> This Python script.
+> This Python script is used to generate a QR Code
 
 ## Requirement
 
-> No requirement 😉
+You will need to install **qrcode** by running this command 👇🏽
+> pip install qrcode
 
 ### Date
 
