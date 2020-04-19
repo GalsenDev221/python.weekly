@@ -1,6 +1,6 @@
 # Week 5️⃣
 
-> This Python script.
+> This Python script allows you to directly open a link on your browser.
 
 ## Requirement
 
