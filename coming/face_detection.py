@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-@author: daoodaba975
-"""
-
 import cv2 as cv2
 
 #charger le classificateur en cascade pré-entrainés
