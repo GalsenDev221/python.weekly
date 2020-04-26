@@ -1,0 +1,226 @@
+#!/usr/bin/python3
+
+import sys, math
+
+if (len(sys.argv) < 2 or len(sys.argv) > 4):
+    print("Refer to -h option.")
+    exit()
+elif (len(sys.argv) < 4 and sys.argv[1] != "-h"):
+    print("Refer to -h option.")
+    exit()
+elif (sys.argv[1] == "-h"):
+    print("USAGE\n\t./cipher message key flag\n\nDESCRIPTION\n\tmessage\ta message, made of ASCII characters\n\tkey\tthe encryption key, made of ASCII characters\n\tflag\t0 for the message to be encrypted, 1 to be decrypted")
+elif (sys.argv[3] != "0" and sys.argv[3] != "1"):
+    print("Refer to -h option.")
+    exit()
+elif (sys.argv[3] == "0") :
+    i = int(len(sys.argv[2]))
+    k = 0
+    j = 0
+    l = 0
+    m = 0
+    z = 0
+    a = 1
+    b = 1
+    inc = 0
+    key_y = 0 
+    src_key = 0
+    key_x = 0
+    msg_y = 0
+    msg_x = 0
+    src_msg = 0
+    len_argv = int(len(sys.argv[1]))
+    print_i = 0
+    print_j = 0
+
+    while i - 1 >= a:
+        a = b * b
+        b += 1
+    if b == 1:
+        b += 1
+    b -= 1
+    matrix_key = [[0 for inc in range(b)]for inc in range(b)]
+
+    while key_y != b:
+        while key_x != b and src_key != i:
+            matrix_key[key_y][key_x] = ord(sys.argv[2][src_key])
+            key_x += 1
+            src_key += 1
+        key_x = 0
+        key_y += 1
+
+    len_matrix_msg = int(len(sys.argv[1]) / b)
+    if ((len(sys.argv[1]) % b) > 0):
+        len_matrix_msg += 1
+
+    matrix_msg = [[0 for inc in range(b)]for inc in range(len_matrix_msg)]
+    matrixres = [[0 for inc in range(b)]for inc in range(len_matrix_msg)]
+
+    while msg_y != len_matrix_msg:
+        while msg_x != b and src_msg != len_argv:
+            matrix_msg[msg_y][msg_x] = ord(sys.argv[1][src_msg])
+            msg_x += 1
+            src_msg += 1
+        msg_x = 0
+        msg_y += 1
+
+    print("Key matrix:")
+    while (print_i != b):
+        while (print_j != b):
+            print("%d\t" % (matrix_key[print_i][print_j]), end='')
+            print_j += 1
+        print_i += 1
+        print()
+        print_j = 0
+    print_i = 0
+    print_j = 0
+    i = 0
+    m = 0
+    k = 0
+    j = 0
+    l = 0
+
+    while m != b:
+        while i != len_matrix_msg: 
+            while k != b:
+                matrixres[j][l] = matrixres[j][l] + (matrix_msg[i][k] * matrix_key[k][m])
+                k += 1
+            i += 1
+            j += 1
+            k = 0
+        l += 1
+        j = 0
+        i = 0
+        m += 1
+
+    print("\nEncrypted message:")
+    while (print_i != len_matrix_msg):
+        while (print_j != m):
+            print("%d " % (matrixres[print_i][print_j]), end='')
+            print_j += 1
+        print_i += 1
+        print_j = 0
+    print()
+elif (sys.argv[3] == "1"):
+    len_argv = int(len(sys.argv[1]))
+    i = int(len(sys.argv[2]))
+    a = 1
+    b = 1
+    inc = 0
+    key_y = 0 
+    src_key = 0
+    key_x = 0
+    msg_y = 0
+    msg_x = 0
+    src_msg = 0
+    j = 0
+    line = 0
+    col = 0
+    print_i = 0
+    print_j = 0
+    m = 0
+    find_space = 0
+    find_space_i = 0
+    
+    while i - 1 >= a:
+        a = b * b
+        b += 1
+    if b == 1:
+        b += 1
+    b -= 1
+
+    matrix_key = [[0 for inc in range(b)]for inc in range(b)]
+
+    while key_y != b:
+        while key_x != b and src_key != i:
+            matrix_key[key_y][key_x] = ord(sys.argv[2][src_key])
+            key_x += 1
+            src_key += 1
+        key_x = 0
+        key_y += 1
+
+    while find_space_i != int(len(sys.argv[1])):
+        if sys.argv[1][find_space_i] == ' ':
+            find_space += 1
+        find_space_i += 1
+    find_space += 1
+
+    len_matrix_msg = find_space / b
+    len_matrix_msg = int(len_matrix_msg) + 1
+    matrix_msg = [[0 for inc in range(b)]for inc in range(len_matrix_msg)]
+
+    while msg_y != len_matrix_msg and j <= len(sys.argv[1]) - 1:
+        while msg_x != b and j <= len(sys.argv[1]) - 1:
+            while j != len(sys.argv[1]) and sys.argv[1][j] != ' ' :
+                matrix_msg[msg_y][msg_x] = ((matrix_msg[msg_y][msg_x] * 10) + int(sys.argv[1][j]))
+                j += 1
+            msg_x += 1
+            j += 1
+        msg_x = 0
+        msg_y += 1
+
+    if b == 2:
+        inverse_x = 0
+        inverse_y = 0
+        inverse_value =  0
+        inverse_value = float(inverse_value)
+        matrix_buffer = [[0 for inc in range(b)]for inc in range(b)]
+        matrix_buffer[0][0] = matrix_key[0][0]
+        matrix_buffer[1][0] = matrix_key[1][0]
+        matrix_buffer[0][1] = matrix_key[0][1]
+        matrix_buffer[1][1] = matrix_key[1][1]
+        inverse_dividende = (float(matrix_key[0][0]) * float(matrix_key[1][1]) - float(matrix_key[0][1]) * float(matrix_key[1][0]))
+        
+        if inverse_dividende == 0:
+            print("Your key is either too small or it is the wrong key.")
+            exit()
+        
+        inverse_value = 1 / inverse_dividende
+        matrix_key[0][0] = (float(matrix_buffer[1][1]) * inverse_value)
+        matrix_key[0][1] = (float(matrix_buffer[0][1]) * inverse_value * -1)
+        matrix_key[1][0] = (float(matrix_buffer[1][0]) * inverse_value * -1)
+        matrix_key[1][1] = (float(matrix_buffer[0][0]) * inverse_value)       
+        matrixres = [[0 for inc in range(b)]for inc in range(len_matrix_msg)]
+
+        i = 0
+        m = 0
+        k = 0
+        j = 0
+        l = 0
+
+        while m != b:
+            while i != len_matrix_msg:
+                while k != b:
+                    matrixres[j][l] = matrixres[j][l] + (matrix_msg[i][k] * matrix_key[k][m])
+                    k += 1
+                i += 1
+                j += 1
+                k = 0
+            l += 1
+            j = 0
+            i = 0
+            m += 1
+
+        print("Key matrix:")
+        while (print_i != b):
+            while (print_j != b):
+                print("%f\t" % (matrix_key[print_i][print_j]), end='')
+                print_j += 1
+            print_i += 1
+            print()
+            print_j = 0
+        print_i = 0
+        print_j = 0
+
+        print("\nDecrypted message:")
+        while (print_i != len_matrix_msg):
+            while (print_j != b):
+                char_to_print = int(matrixres[print_i][print_j])
+                if char_to_print < 0:
+                    print("I'm sorry but you have the wrong key.")
+                    exit()
+                print("%c" % (chr(char_to_print)), end='')
+                print_j += 1
+            print_i += 1
+            print_j = 0
+        print()
