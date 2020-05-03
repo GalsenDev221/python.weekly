@@ -1,11 +1,12 @@
 # Week 7️⃣
 
-> This Python script.
+> This Python script allow you to play a sound.
 
 ## Requirement
 
-> No requirement 😉
+You will need to install **playsound** by running this command 👇🏽
+> pip install playsound
 
 ### Date
 
-> 26 April 2020
+> 3 May 2020
