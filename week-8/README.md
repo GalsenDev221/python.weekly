@@ -1,6 +1,6 @@
 # Week 8️⃣
 
-> This Python script
+> This Python script allows you to replace a given character with another character after typing.
 
 ## Requirement
 
