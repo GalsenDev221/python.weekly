@@ -14,7 +14,7 @@ Python Weekly is a collection of a few little programming tips with Python each 
 > **Week 6️⃣** > **Automate your keyboard 👾**<br>
 > **Week 7️⃣** > **Play a sound 🎼**<br>
 > **Week 8️⃣** > **Replace a given character with another character 🔄**<br>
-> **Week 9️⃣** > ****<br>
+> **Week 9️⃣** > **Unzip a zip file 📂**<br>
 > **Week 🔟** > ****<br>
 
 ## Community 👩🏽‍💻👨🏽‍💻

@@ -1,6 +1,6 @@
 # Week 9️⃣
 
-> This Python script
+> This Python script allow you to unzip a zip file
 
 ## Requirement
 
