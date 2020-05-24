@@ -1,10 +1,10 @@
 # Python Weekly 🐍🎯
 
-Python Weekly is a collection of a few little programming tips with Python each week by @daoodaba975
+Python Weekly is a collection of some little programming tips with Python for 10 days (every Sunday) by @daoodaba975
 
 ![python-v-3.7](https://img.shields.io/badge/python-v3.7-blue)
 
-## List of tips
+## List of tips 📜🔗
 
 > **Week 1️⃣** > **Displays the multiplication table for a number 📟**<br>
 > **Week 2️⃣** > **Find a file in a directory on your machine 🔎**<br>
@@ -15,7 +15,7 @@ Python Weekly is a collection of a few little programming tips with Python each 
 > **Week 7️⃣** > **Play a sound 🎼**<br>
 > **Week 8️⃣** > **Replace a given character with another character 🔄**<br>
 > **Week 9️⃣** > **Unzip a zip file 📂**<br>
-> **Week 🔟** > ****<br>
+> **Week 🔟** > **Reverse a character string ↩**<br>
 
 ## Community 👩🏽‍💻👨🏽‍💻
 
