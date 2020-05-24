@@ -1,6 +1,6 @@
 # Week 🔟
 
-> This Python script
+> This little Python script allows you to reverse a character string.
 
 ## Requirement
 
