@@ -1,8 +1,10 @@
 # Python Weekly 🐍🎯
 
-Python Weekly is a collection of some little programming tips with Python for 10 days (every Sunday) by @daoodaba975
+Python Weekly is a collection of some little programming tips with Python for 10 days (every Sunday) by **[@daoodaba975](https://github.com/daoodaba975)**
 
-![python-v-3.7](https://img.shields.io/badge/python-v3.7-blue)
+`Using Python version 3.7`
+
+[![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal)
 
 ## List of tips 📜🔗
 
